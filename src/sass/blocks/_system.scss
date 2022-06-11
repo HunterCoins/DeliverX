@@ -1,0 +1,41 @@
+.system {
+    margin-top: 200px;
+    &__wrapper {
+        margin-top: 100px;
+        display: grid;
+        grid-template-rows: minmax(430px, auto);
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 90px;
+    }
+    &__icon {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 32px;
+    }
+    &__buttons {
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+        .btn_white {
+            margin-left: 28px;
+        }
+    }
+    &__divider {
+        height: 1px;
+        width: 100%;
+        background: #CACACA;
+        margin-top: 200px;
+    }
+    .title {
+        text-align: center;
+        &_red {
+            margin-bottom: 7px;
+        }
+        &_fz28 {
+            margin-bottom: 15px;
+        }
+        &_fz44 {
+            margin-bottom: 22px;
+        }
+    }
+}
