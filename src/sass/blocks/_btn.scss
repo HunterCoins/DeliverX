@@ -1,0 +1,47 @@
+.btn {
+    transition: .5s all;
+    width: 247px;
+    height: 73px;
+    background: $btn_red;
+    border: 1px solid $btn_red;
+    border-radius: 16px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    &_white-header {
+        width: 162px;
+        height: 56px;
+        border-radius: 12px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        background: #FFFFFF;
+        border: 1px solid #EDEDED;
+        box-shadow: 0px 2px 6px rgba(16, 16, 16, 0.04);
+        color: $main-black;
+        margin-right: 18px;
+        &:hover {
+            background: $btn_red;
+            color: #ffffff;
+            border: none;
+        }
+    }
+    &_red-header {
+        width: 114px;
+        height: 56px;
+        border-radius: 12px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        background: $btn-red;
+        &:hover {
+            background: #FFFFFF;
+            border: 1px solid #EDEDED;
+            box-shadow: 0px 2px 6px rgba(16, 16, 16, 0.04);
+            color: $main-black;
+        }
+    }
+
+}
