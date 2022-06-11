@@ -10,6 +10,7 @@
     font-size: 18px;
     line-height: 20px;
     text-align: center;
+    @include white_hover;
     &_white-header {
         width: 162px;
         height: 56px;
@@ -22,11 +23,7 @@
         box-shadow: 0px 2px 6px rgba(16, 16, 16, 0.04);
         color: $main-black;
         margin-right: 18px;
-        &:hover {
-            background: $btn_red;
-            color: #ffffff;
-            border: none;
-        }
+        @include red_hover;
     }
     &_red-header {
         width: 114px;
@@ -36,12 +33,16 @@
         font-size: 16px;
         line-height: 18px;
         background: $btn-red;
-        &:hover {
-            background: #FFFFFF;
-            border: 1px solid #EDEDED;
-            box-shadow: 0px 2px 6px rgba(16, 16, 16, 0.04);
-            color: $main-black;
-        }
+    }
+    &_white {
+        width: 205px;
+        background: #FFFFFF;
+        border: 1px solid #EDEDED;
+        box-shadow: 0px 2px 6px rgba(16, 16, 16, 0.04);
+        border-radius: 16px;
+        color: $main-black;
+        font-weight: 400;
+        @include red_hover;
     }
 
 }

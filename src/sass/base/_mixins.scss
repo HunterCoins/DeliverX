@@ -1,0 +1,16 @@
+@mixin white_hover {
+    &:hover {
+        // transform: scale(1.02);
+        background: #FFFFFF;
+        border: 1px solid #EDEDED;
+        box-shadow: 0px 2px 6px rgba(16, 16, 16, 0.04);
+        color: $main-black;
+    }
+}
+@mixin red_hover {
+    &:hover {
+        background: $btn_red;
+        color: #ffffff;
+        border: none;
+    }
+}

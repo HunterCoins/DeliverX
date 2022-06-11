@@ -1,0 +1,21 @@
+.title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #656565;
+    &_fz44 {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 54px;
+    }
+    &_fz12 {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 30px;
+        color: #656565;
+    }
+    &_red {
+        line-height: 20px;
+        color: $btn-red;
+    }
+}
