@@ -1,0 +1,70 @@
+.reviews {
+    margin-top: 200px;
+    padding: 200px 0;
+    background: #FAFAFA;
+    &__content {
+        display: grid;
+        // grid-template: minmax(130px, auto) minmax(564px, auto) / repeat(2, 480px);
+        row-gap: 48px;
+        grid-template-rows: 130px minmax(564px, auto);
+        grid-template-columns: 100%;
+    }
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        &-buttons {
+            display: flex;
+            align-items: flex-end;
+        }
+    }
+    &__wrapper {
+        display: grid;
+        grid-template: repeat(2, minmax(268px, auto)) / repeat(3, 390px);
+        gap: 40px;
+    }
+    &__card {
+        padding: 40px 33px 50px 33px;
+        background: #FFFFFF;
+        border: 1px solid #EDEDED;
+        box-shadow: 0px 2px 12px rgba(16, 16, 16, 0.08);
+        border-radius: 24px;
+        &-block {
+            position: relative;
+            display: flex;
+            margin-bottom: 24px;
+            &::after {
+                content: "";
+                position: absolute;
+                top: 14px;
+                right: 0;
+                width: 36px;
+                height: 36px;
+                background: #EEF8FF;
+                border-radius: 8px
+            }
+        }
+        &-box {
+            margin: auto 0 auto 10px;
+            align-items: center;
+        }
+        &-name {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 20px;
+            color:$main-black;
+        }
+        &-location {
+            margin-top: 6px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 18px;
+            color: $btn-red;
+        }
+    }
+    .fw400 {
+        font-weight: 400;
+    }
+    .mt22 {
+        margin-top: 22px;
+    }
+}
