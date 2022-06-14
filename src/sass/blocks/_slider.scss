@@ -1,7 +1,7 @@
 .slider {
     position: relative;
+    z-index: 1;
     height: 854px;
-    margin-top: 200px;
     background-color: $main-black;
     &__text {
         padding-top: 270px ;
@@ -26,17 +26,20 @@
         }
     }
     &__inner-2 {
+        position: relative;
+        top: -140px;
         display: inline-block;
         width: 323px;
         height: 854px;
         div {
             margin-bottom: 30px;
         }
+
     }
     &__wrapper {
         position: absolute;
-        top: 0%;
-        right: 0%;
+        top: 0;
+        right: 0;
         height: 854px;
     }
 }
