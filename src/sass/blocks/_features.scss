@@ -2,6 +2,35 @@
     position: relative;
     z-index: 2;
     padding: 200px 0;
-    min-height: 1400px;
     background: #fff;
+    &__wrapper {
+        margin-top: 56px;
+        display: grid;
+        grid-template: repeat(2, minmax(260px, auto)) / repeat(3, 350px);
+        row-gap: 80px;
+        column-gap: 100px;
+    }
+    &__item {
+        text-align: center;
+        .mt21 {
+            margin-top: 21px;
+        }
+    }
+    &__buttons {
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+    }
+    .title {
+        text-align: center;
+        &_red {
+            margin-bottom: 7px;
+        }
+        &_fz28 {
+            margin-top: 24px;
+        }
+        &_fz44 {
+            margin-bottom: 22px;
+        }
+    }
 }
