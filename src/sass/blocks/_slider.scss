@@ -1,0 +1,42 @@
+.slider {
+    position: relative;
+    height: 854px;
+    margin-top: 200px;
+    background-color: $main-black;
+    &__text {
+        padding-top: 270px ;
+        width: 540px;
+        .c_white {
+            margin-top: 16px;
+            color: #ffffff;
+        }
+        .btn_red {
+            margin-top: 27px;
+            font-weight: 400;
+            width: 206px;
+        }
+    }
+    &__inner-1 {
+        display: inline-block;
+        margin-right: 30px;
+        width: 323px;
+        height: 854px;
+        div {
+            margin-bottom: 30px;
+        }
+    }
+    &__inner-2 {
+        display: inline-block;
+        width: 323px;
+        height: 854px;
+        div {
+            margin-bottom: 30px;
+        }
+    }
+    &__wrapper {
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        height: 854px;
+    }
+}
