@@ -1,0 +1,89 @@
+.footer {
+    padding: 70px 0 100px 0;
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        &-block {
+            width: 450px;
+            img {
+                margin-bottom: 29px;
+            }
+        }
+        &-buttons {
+            display: flex;
+            align-items: center;
+            .btn_ios {
+                font-size: 16px;
+                line-height: 22px;
+                height: 65px;
+                width: 208px;
+                margin-right: 26px;
+            }
+            .btn_android {
+                font-size: 16px;
+                line-height: 22px;
+                height: 65px;
+                width: 251px;
+            }
+        }
+    }
+    &__nav {
+        margin-top: 100px;
+        display: grid;
+        grid-template: minmax(284px, auto) / 
+                       minmax(222px, auto) minmax(175px, auto) minmax(500px, auto);
+        justify-content: space-between;
+        &-title {
+            margin-bottom: 40px;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 22px;
+            color: $main-black;
+        }
+        &-list {
+            display: flex;
+            justify-content: space-between;
+        }
+        &-links {
+            ul {
+                list-style-type: none;
+                li {
+                    margin-bottom: 17px;
+                    a {
+                        text-decoration: none;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 20px;
+                        color: #656565;
+                        &:hover {
+                            color: $btn-red;
+                        }
+                    }
+                }
+            }
+        }
+        &-cities {
+            display: grid;
+            grid-template: repeat(2, 78px) / repeat(2, minmax(200px, auto));
+            row-gap: 13px;
+            column-gap: 29px;
+        }
+        &-card {
+            display: flex;
+            align-items: center;
+        }
+        &-name {
+            margin-left: 18px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 24px;
+            color: $main-black;
+        }
+    }
+    .divider {
+        margin-top: 84px;
+        width: 100%;
+        height: 1px;
+        background: #CACACA;
+    }
+}
