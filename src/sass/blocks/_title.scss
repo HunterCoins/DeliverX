@@ -3,12 +3,6 @@
     font-size: 18px;
     line-height: 30px;
     color: #656565;
-    &_fz44 {
-    font-weight: 700;
-    font-size: 44px;
-    line-height: 54px;
-    color: $main-black;
-    }
     &_fz12 {
         font-weight: 400;
         font-size: 12px;
@@ -20,6 +14,12 @@
         line-height: 40px;
         color: #121212;
     }
+    &_fz44 {
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 54px;
+        color: $main-black;
+        }
     &_fz56 {
         font-weight: 700;
         font-size: 56px;

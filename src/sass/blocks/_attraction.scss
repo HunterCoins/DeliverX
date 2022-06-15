@@ -1,0 +1,38 @@
+.attraction {
+    position: relative;
+    margin-top: 200px;
+    background-color: $main-black;
+    height: 680px;
+    &__text {
+        padding-top: 180px;
+        width: 515px;
+    }
+    &__wrapper {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 680px;
+        &-inner {
+            position: relative;
+        }
+    }
+    &__upper {
+        position: absolute;
+        top: -70px;
+        right: 290px;
+        z-index: 2;
+    }
+    &__under {
+        position: absolute;
+        top: -90px;
+        right: 12px;
+        z-index: 1;
+    }
+    .c_white {
+        margin: 20px 0 40px 0;
+        color: #fff;
+    }
+    .fw400 {
+        font-weight: 400;
+    }
+}
