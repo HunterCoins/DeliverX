@@ -18,15 +18,33 @@
     }
     &__upper {
         position: absolute;
-        top: -70px;
-        right: 290px;
+        top: -45px;
+        right: 360px;
         z-index: 2;
+        &._anim-items {
+            transition: all .8s ease 0s;
+            transform: rotate(0);
+            opacity: 0;
+            &._active {
+                transform: rotate(-13deg);
+                opacity: 1;
+            }
+        }
     }
     &__under {
         position: absolute;
-        top: -90px;
-        right: 12px;
+        top: -60px;
+        right: 95px;
         z-index: 1;
+        &._anim-items {
+            transition: all .8s ease 0s;
+            transform: rotate(0);
+            opacity: 0;
+            &._active {
+                transform: rotate(13deg);
+                opacity: 1;
+            }
+        }
     }
     .c_white {
         margin: 20px 0 40px 0;

@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
+  "type": "commonjs",
   "dependencies": {
     "ansi-colors": "^1.1.0",
     "ansi-gray": "^0.1.1",
@@ -141,6 +142,7 @@
     "isarray": "^1.0.0",
     "isexe": "^2.0.0",
     "isobject": "^3.0.1",
+    "jquery": "^3.6.1",
     "json-stable-stringify-without-jsonify": "^1.0.1",
     "just-debounce": "^1.1.0",
     "kind-of": "^5.1.0",

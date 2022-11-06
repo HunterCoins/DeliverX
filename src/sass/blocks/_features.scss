@@ -1,12 +1,10 @@
 .features {
-    position: relative;
-    z-index: 2;
     padding: 200px 0;
     background: #fff;
     &__wrapper {
         margin-top: 56px;
         display: grid;
-        grid-template: repeat(2, minmax(260px, auto)) / repeat(3, 350px);
+        grid-template: repeat(2, minmax(260px, auto)) / repeat(3, minmax(auto, 350px));
         row-gap: 80px;
         column-gap: 100px;
     }
@@ -15,11 +13,25 @@
         .mt21 {
             margin-top: 21px;
         }
+        &._anim-items {
+            transition: all 0.8s ease 0s;
+            transform: rotate3d(1, 0, 0, 90deg);
+            opacity: 0;
+            &._active {
+                transform: rotate3d(1, 0, 0, 0deg);
+                opacity: 1;
+            }
+        }
+    }
+    &__title {
+        max-width: 600px;
+        margin: 0 auto;
     }
     &__buttons {
         margin-top: 60px;
         display: flex;
         justify-content: center;
+        gap: 27px;
     }
     .title {
         text-align: center;

@@ -20,23 +20,24 @@
         display: inline-block;
         margin-right: 30px;
         width: 323px;
-        height: 854px;
+        height: 100%;
         div {
             margin-bottom: 30px;
         }
     }
     &__inner-2 {
         position: relative;
-        top: -140px;
+        top: -134px;
         display: inline-block;
         width: 323px;
-        height: 854px;
+        height: 100%;
         div {
             margin-bottom: 30px;
         }
 
     }
     &__wrapper {
+        overflow: hidden;
         position: absolute;
         top: 0;
         right: 0;

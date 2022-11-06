@@ -1,33 +1,41 @@
 .reviews {
-    margin-top: 200px;
-    padding: 200px 0;
+    margin-top: 100px;
+    padding-top: 100px;
     background: #FAFAFA;
     &__content {
         display: grid;
-        // grid-template: minmax(130px, auto) minmax(564px, auto) / repeat(2, 480px);
         row-gap: 48px;
-        grid-template-rows: 130px minmax(564px, auto);
+        grid-template-rows: minmax(130px, auto) minmax(564px, auto);
         grid-template-columns: 100%;
     }
     &__header {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         &-buttons {
             display: flex;
+            gap: 27px;
             align-items: flex-end;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        &-item {
+            max-width: 460px;
         }
     }
     &__wrapper {
         display: grid;
-        grid-template: repeat(2, minmax(268px, auto)) / repeat(3, 390px);
+        grid-template: repeat(2, minmax(268px, auto)) / repeat(3, minmax(auto, 390px));
+        grid-auto-columns: minmax(auto, 390px);
+        grid-auto-rows: minmax(268px, auto);
         gap: 40px;
     }
     &__card {
         padding: 40px 33px 50px 33px;
         background: #FFFFFF;
         border: 1px solid #EDEDED;
-        box-shadow: 0px 2px 12px rgba(16, 16, 16, 0.08);
         border-radius: 24px;
+        transition: all .8s ease 0s;
         &-block {
             position: relative;
             display: flex;
@@ -41,6 +49,23 @@
                 height: 36px;
                 background: #EEF8FF;
                 border-radius: 8px
+            }
+        }
+        &-shell {
+            max-width: 390px;
+            overflow: hidden;
+            border-radius: 24px;
+            box-shadow: 0px 2px 12px rgba(16, 16, 16, 0.08);
+            &._anim-items {
+                & .reviews__card {
+                    transform: translateY(120%);
+                }
+                &._active {
+                    & .reviews__card {
+                        transform: translateY(0);
+                    }
+                    
+                }
             }
         }
         &-box {

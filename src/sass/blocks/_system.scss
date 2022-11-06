@@ -4,8 +4,22 @@
         margin-top: 100px;
         display: grid;
         grid-template-rows: minmax(430px, auto);
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, minmax(auto, 350px));
         column-gap: 90px;
+    }
+    &__item {
+        display: grid;
+        grid-template-columns: minmax(auto, 350px);
+        grid-template-rows: minmax(218px, auto) minmax(80px, auto) minmax(90px, auto);
+        &._anim-items {
+            transition: all 0.8s ease 0s;
+            transform: rotate3d(1, 0, 0, 90deg);
+            opacity: 0;
+            &._active {
+                transform: rotate3d(1, 0, 0, 0deg);
+                opacity: 1;
+            }
+        }
     }
     &__icon {
         display: block;
@@ -16,6 +30,8 @@
         margin-top: 60px;
         display: flex;
         justify-content: center;
+        gap: 27px;
+        flex-wrap: wrap;
     }
     &__divider {
         height: 1px;

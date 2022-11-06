@@ -11,6 +11,9 @@
     line-height: 20px;
     text-align: center;
     @include white_hover;
+    &:focus {
+        outline: none;
+    }
     &_white-header {
         width: 162px;
         height: 56px;
@@ -24,6 +27,7 @@
         color: $main-black;
         margin-right: 18px;
         @include red_hover;
+        
     }
     &_red-header {
         width: 114px;
@@ -42,7 +46,6 @@
         border-radius: 16px;
         color: $main-black;
         font-weight: 400;
-        margin-left: 27px;
         @include red_hover;
     }
 

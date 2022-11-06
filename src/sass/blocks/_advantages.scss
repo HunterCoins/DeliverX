@@ -1,8 +1,6 @@
 .advantages {
     margin-top: 200px;
     padding-bottom: 200px;
-    position: relative;
-    z-index: 2;
     background-color: #fff;
     &__wrapper {
         min-height: 400px;
@@ -25,10 +23,19 @@
             color: #656565;
 
         }
+        &-item {
+            &._anim-items {
+                transition: all .8s ease 0s;
+                transform: scale(0);
+                &._active {
+                    transform: scale(1);
+                }
+            }
+        }
     }
     &__block {
         display: grid;
-        grid-template-rows: 683px 73px;
+        grid-template-rows: minmax(683px, auto) minmax(73px, auto);
         grid-template-columns: repeat(2, 1fr);
         row-gap: 80px;
         column-gap: 50px;
@@ -53,11 +60,24 @@
             position: absolute;
             top: 66px;
             right: 315px;
-            z-index: -1;
+            z-index: 0;
         }
         &-buttons {
             grid-column: 1/3;
             justify-self: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 27px;
+            ._anim-items {
+                transition: all .8s ease 0s;
+                &._active {
+                    animation-name: scale;
+                    animation-duration: 0.7s;
+                    animation-iteration-count: 1;
+                    animation-delay: .8s;
+                }
+            }
         }
     }
 }
